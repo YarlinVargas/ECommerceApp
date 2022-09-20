@@ -7,15 +7,21 @@ namespace ECommerceApp
 {
     public partial class App : Application
     {
+        #region Properties
         public static NavigationPage Navigator { get; internal set; }
+        public static MasterPage Master { get; internal set; }
+        #endregion
 
+        #region Constructors
         public App()
         {
             InitializeComponent();
 
             MainPage = new MasterPage();
         }
+        #endregion
 
+        #region Methods
         protected override void OnStart()
         {
         }
@@ -26,6 +32,7 @@ namespace ECommerceApp
 
         protected override void OnResume()
         {
-        }
+        } 
+        #endregion
     }
 }

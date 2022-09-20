@@ -10,17 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace ECommerceApp.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MasterPage : MasterDetailPage
+    public partial class SetupPage : ContentPage
     {
-        public MasterPage()
+        public SetupPage()
         {
             InitializeComponent();
-        }
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-            App.Master = this;
-            App.Navigator = Navigator;
         }
     }
 }
